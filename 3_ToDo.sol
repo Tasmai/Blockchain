@@ -25,7 +25,7 @@ contract ToDo
 
     function getCount() external view returns (uint)
     {
-        return [msg.sender].length;
+        return users[msg.sender].length;
     } 
 
     function deleteTask(uint id) external 
